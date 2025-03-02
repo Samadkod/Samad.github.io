@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Samad Kodon - Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Samad KODON</h1>
+                <h2>Data Analyst | Machine Learning | NLP</h2>
+                <p>Passionné par l'analyse de données et la modélisation prédictive, je transforme les données en insights stratégiques pour des décisions éclairées.</p>
+                <a href="#about" class="button">En savoir plus</a>
+            </div>
+            <div class="home-photo">
+                <img src="https://avatars.githubusercontent.com/u/121679170?s=400&u=0e92c71ca881aa8e93c558c7bd982a86d1954c97&v=4" alt="Photo de Samad Kodon">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <h2>À propos de moi</h2>
+        <p>Fort d'une expérience de 6 mois chez <strong>Canal+</strong> et de plusieurs projets en <strong>Machine Learning</strong> et <strong>NLP</strong>, je suis spécialisé dans l'analyse de données et la modélisation prédictive. Mon objectif est d'apporter une valeur ajoutée à travers des solutions data-driven.</p>
+        <a href="/CV_2024-11-04_Samadou_KODON.pdf" download class="button">Télécharger mon CV</a>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="skills">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Langages de Programmation</h3>
+                <ul>
+                    <li>Python (TensorFlow, PyTorch, Keras)</li>
+                    <li>SQL</li>
+                    <li>R</li>
+                    <li>SAS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Big Data & Cloud</h3>
+                <ul>
+                    <li>Snowflake</li>
+                    <li>ETL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Régression, Classification, Clustering</li>
+                    <li>NLP, Transformers</li>
+                    <li>Web Scraping, API</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Visualisation de Données</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Matplotlib, Seaborn</li>
+                    <li>Datalku</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
+        <h2>Projets</h2>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">Tous</button>
+            <button onclick="filterProjects('python')">Python</button>
+            <button onclick="filterProjects('sql')">SQL</button>
+            <button onclick="filterProjects('nlp')">NLP</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-tech="python sql">
+                <h3>Segmentation des abonnés de la Ligue 1</h3>
+                <p>Optimisation de l'engagement client à travers une segmentation avancée des abonnés.</p>
+                <a href="https://github.com/Samadkod/Canalplus_Experiences_Data" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-card" data-tech="python nlp">
+                <h3>Catégorisation de produits</h3>
+                <p>Catégorisation automatique des produits à partir de descriptions textuelles.</p>
+                <a href="https://github.com/Samadkod/Cat-gorisation-de-produits" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-card" data-tech="python">
+                <h3>Modélisation de l'Attrition</h3>
+                <p>Prédiction des départs clients pour améliorer la rétention.</p>
+                <a href="https://github.com/Samadkod/Canalplus_Experiences_Data" target="_blank">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="experience">
+        <h2>Expérience Professionnelle</h2>
+        <div class="experience-item">
+            <h3>Data Analyst - Canal+</h3>
+            <p><strong>Février 2024 - Août 2024</strong></p>
+            <ul>
+                <li>Développement d'un modèle de machine learning pour prédire le churn des abonnés.</li>
+                <li>Optimisation des processus de reporting avec Datalku.</li>
+                <li>Création de tableaux de bord interactifs pour le suivi des KPIs.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Assistant Data Analyst - Gozem</h3>
+            <p><strong>Juin 2019 - Août 2021</strong></p>
+            <ul>
+                <li>Extraction et analyse des données clients pour optimiser les stratégies marketing.</li>
+                <li>Mise en place de reporting automatisé avec Google Sheets.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Prêt à collaborer sur vos projets data ? Contactez-moi !</p>
+        <div class="contact-links">
+            <a href="mailto:samadou.kodon@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://linkedin.com/in/skodon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Samadkod" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Samad Kodon. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
