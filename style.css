@@ -122,6 +122,15 @@ h2 {
     transform: translateY(-10px);
 }
 
+.skill-icons img {
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.skill-icons img:hover {
+    transform: scale(1.1);
+}
+
 /* Projets */
 .filter-buttons {
     text-align: center;
