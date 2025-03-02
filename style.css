@@ -85,6 +85,7 @@ h2 {
 .home-text h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
+    color: #fff; /* Assure que le titre est visible */
 }
 
 .home-text p {
@@ -253,4 +254,25 @@ footer {
     background: #001f3f;
     color: #fff;
     margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-photo img {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
