@@ -1,22 +1,16 @@
-// Filtrage des projets
-function filterProjects(tech) {
-    const projects = document.querySelectorAll('.project-card');
-    projects.forEach(project => {
-        if (tech === 'all' || project.dataset.tech.includes(tech)) {
-            project.style.display = 'block';
-        } else {
-            project.style.display = 'none';
-        }
-    });
+// Mode sombre
+const modeSwitch = document.querySelector('.mode-switch');
+modeSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+// Carrousel de projets
+let index = 0;
+const slides = document.querySelectorAll('.project-card');
+
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    document.querySelector('.carousel-inner').style.transform = `translateX(-${index * 100}%)`;
 }
 
-// Animation au scroll
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.8) {
-            section.classList.add('visible');
-        }
-    });
-});
+setInterval(nextSlide, 3000);
