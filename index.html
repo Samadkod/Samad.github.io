@@ -9,86 +9,146 @@
 </head>
 <body>
     <!-- Barre de navigation -->
-    <header>
-        <nav>
-            <div class="logo">Samad Kodon</div>
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mode-switch">
-                <i class="fas fa-moon"></i>
-            </div>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Section Accueil -->
     <section id="home" class="home">
         <div class="home-content">
-            <h1>Samad KODON</h1>
-            <h2>Data Analyst | Chargé d'Études Statistiques | Expert en Machine Learning</h2>
-            <p>Passionné par l'analyse de données et la modélisation prédictive.</p>
-            <a href="#about" class="button">En savoir plus</a>
-        </div>
-        <div class="home-photo">
-            <img src="https://avatars.githubusercontent.com/u/121679170?s=400&u=0e92c71ca881aa8e93c558c7bd982a86d1954c97&v=4" alt="Photo de Samad Kodon">
+            <div class="home-text">
+                <h1>Samad KODON</h1>
+                <h2>Data Analyst | Chargé d'Études Statistiques | Expert en Machine Learning</h2>
+                <p>Passionné par l'analyse de données et la modélisation prédictive, je transforme les données en insights stratégiques pour des décisions éclairées.</p>
+                <a href="#about" class="button">En savoir plus</a>
+            </div>
+            <div class="home-photo">
+                <img src="https://avatars.githubusercontent.com/u/121679170?s=400&u=0e92c71ca881aa8e93c558c7bd982a86d1954c97&v=4" alt="Photo de Samad Kodon">
+            </div>
         </div>
     </section>
 
     <!-- Section À propos -->
-    <section id="about">
+    <section id="about" class="about">
         <h2>À propos de moi</h2>
-        <p>Fort d'une expérience chez <strong>Canal+</strong> et de plusieurs projets en <strong>Machine Learning</strong>, je suis spécialisé dans l'analyse de données.</p>
-        <a href="CV_2024-11-04_Samadou_KODON.pdf" download class="button">Télécharger mon CV</a>
+        <p>Fort d'une expérience de 6 mois chez <strong>Canal+</strong> et de plusieurs projets en <strong>Machine Learning</strong> et <strong>NLP</strong>, je suis spécialisé dans l'analyse de données et la modélisation prédictive. Mon objectif est d'apporter une valeur ajoutée à travers des solutions data-driven.</p>
+        <a href="/assets/CV_2024-11-04_Samadou_KODON.pdf" download class="button">Télécharger mon CV</a>
     </section>
 
     <!-- Section Compétences -->
-    <section id="skills">
+    <section id="skills" class="skills">
         <h2>Compétences</h2>
         <div class="skills-grid">
-            <div class="skill-category"><h3>Langages</h3><p>Python, SQL, R, SAS</p></div>
-            <div class="skill-category"><h3>Big Data & Cloud</h3><p>Snowflake, ETL</p></div>
-            <div class="skill-category"><h3>Machine Learning</h3><p>TensorFlow, PyTorch, NLP</p></div>
-            <div class="skill-category"><h3>Visualisation</h3><p>Power BI, Tableau</p></div>
-        </div>
-    </section>
-
-    <!-- Section Projets (Carrousel) -->
-    <section id="projects">
-        <h2>Projets</h2>
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="project-card">
-                    <img src="projet1.jpg" alt="Projet 1">
-                    <h3>Segmentation des abonnés</h3>
-                    <a href="#">Voir le projet</a>
+            <div class="skill-category">
+                <h3>Langages de Programmation</h3>
+                <div class="skill-icons">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+                    <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
+                    <img src="https://img.shields.io/badge/SAS-004B87?style=for-the-badge&logo=sas&logoColor=white" alt="SAS">
                 </div>
-                <div class="project-card">
-                    <img src="projet2.jpg" alt="Projet 2">
-                    <h3>Catégorisation de produits</h3>
-                    <a href="#">Voir le projet</a>
+            </div>
+            <div class="skill-category">
+                <h3>Big Data & Cloud</h3>
+                <div class="skill-icons">
+                    <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white" alt="Snowflake">
+                    <img src="https://img.shields.io/badge/ETL-FF6F00?style=for-the-badge&logo=apache-spark&logoColor=white" alt="ETL">
                 </div>
-                <div class="project-card">
-                    <img src="projet3.jpg" alt="Projet 3">
-                    <h3>Prédiction de l'attrition</h3>
-                    <a href="#">Voir le projet</a>
+            </div>
+            <div class="skill-category">
+                <h3>Machine Learning</h3>
+                <div class="skill-icons">
+                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+                    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+                    <img src="https://img.shields.io/badge/NLP-4D4D4D?style=for-the-badge&logo=natural-language-processing&logoColor=white" alt="NLP">
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Visualisation de Données</h3>
+                <div class="skill-icons">
+                    <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black" alt="Power BI">
+                    <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau">
+                    <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-links">
-            <a href="mailto:samadou.kodon@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://linkedin.com/in/skodon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
+        <h2>Projets</h2>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">Tous</button>
+            <button onclick="filterProjects('python')">Python</button>
+            <button onclick="filterProjects('sql')">SQL</button>
+            <button onclick="filterProjects('nlp')">NLP</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-tech="python sql">
+                <img src="https://image.over-blog.com/njENmfOTRObRazbfCP8sfwn6DOA=/filters:no_upscale()/image%2F2132870%2F20230920%2Fob_ba7f44_lb190923-06.JPG" alt="Projet Ligue 1">
+                <h3>Segmentation des abonnés de la Ligue 1</h3>
+                <p>Optimisation de l'engagement client à travers une segmentation avancée des abonnés.</p>
+                <a href="https://github.com/Samadkod/Canalplus_Experiences_Data" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-card" data-tech="python nlp">
+                <img src="https://e-tailize.com/wp-content/uploads/2023/10/top-marketplace-for-furniture-1024x683.jpg" alt="Projet Catégorisation">
+                <h3>Catégorisation de produits</h3>
+                <p>Catégorisation automatique des produits à partir de descriptions textuelles.</p>
+                <a href="https://github.com/Samadkod/Cat-gorisation-de-produits" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-card" data-tech="python">
+                <img src="https://dezyre.gumlet.io/images/blog/churn-models/Customer_Churn_Prediction_Models_in_Machine_Learning.png?w=800&dpr=1.0" alt="Projet Attrition">
+                <h3>Modélisation de l'Attrition</h3>
+                <p>Prédiction des départs clients pour améliorer la rétention.</p>
+                <a href="https://github.com/Samadkod/Canalplus_Experiences_Data" target="_blank">Voir le projet</a>
+            </div>
         </div>
     </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="experience">
+        <h2>Expérience Professionnelle</h2>
+        <div class="experience-item">
+            <h3>Data Analyst - Canal+</h3>
+            <p><strong>Février 2024 - Août 2024</strong></p>
+            <ul>
+                <li>Développement d'un modèle de machine learning pour prédire le churn des abonnés, réduisant le taux d'attrition de 15%.</li>
+                <li>Optimisation des processus de reporting avec Datalku, réduisant le temps de préparation des rapports de 30%.</li>
+                <li>Création de tableaux de bord interactifs pour le suivi des KPIs, améliorant la prise de décision stratégique.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Assistant Data Analyst - Gozem</h3>
+            <p><strong>Juin 2019 - Août 2021</strong></p>
+            <ul>
+                <li>Extraction et analyse des données clients pour optimiser les stratégies marketing, augmentant l'engagement client de 20%.</li>
+                <li>Mise en place de reporting automatisé avec Google Sheets, réduisant le temps de génération des rapports de 40%.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Prêt à collaborer sur vos projets data ? Contactez-moi !</p>
+        <div class="contact-links">
+            <a href="mailto:samadou.kodon@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://linkedin.com/in/skodon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Samadkod" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Samad Kodon. Tous droits réservés.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
