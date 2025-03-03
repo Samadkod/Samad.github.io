@@ -235,7 +235,7 @@ h2 {
 .experience-item {
     margin-bottom: 30px;
     padding: 20px;
-    background: #fff;
+    background: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -252,7 +252,7 @@ h2 {
 
 .experience-item p {
     margin-bottom: 10px;
-    color: #f9f9f9;
+    color: #555;
 }
 
 .experience-item ul {
@@ -318,17 +318,79 @@ body.dark-mode section {
     color: #ffffff;
 }
 
+body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .home-text h1,
+body.dark-mode .home-text h2,
+body.dark-mode .home-text p {
+    color: #ffffff;
+}
+
+body.dark-mode .skill-category {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-mode .skill-category h3 {
+    color: #ffffff;
+}
+
 body.dark-mode .project-card {
     background-color: #2d2d2d;
     color: #ffffff;
+}
+
+body.dark-mode .project-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .project-card p {
+    color: #cccccc;
 }
 
 body.dark-mode .project-card a {
     color: #0073e6;
 }
 
+body.dark-mode .experience-item {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-mode .experience-item h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .experience-item p {
+    color: #cccccc;
+}
+
+body.dark-mode .experience-item ul {
+    color: #cccccc;
+}
+
 body.dark-mode .contact-links a {
     color: #0073e6;
+}
+
+body.dark-mode .cv-button {
+    background-color: #0073e6;
+    color: #ffffff;
+}
+
+body.dark-mode .cv-button:hover {
+    background-color: #005bb5;
+}
+
+body.dark-mode .projects-button {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+body.dark-mode .projects-button:hover {
+    background-color: #218838;
 }
 
 /* Responsive Design */
