@@ -361,3 +361,13 @@ body.dark-mode .contact-links a {
         margin: 10px 0;
     }
 }
+/* Styles pour les boutons images */
+.button img {
+    width: 150px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.button img:hover {
+    transform: scale(1.1);
+}
