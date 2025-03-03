@@ -1,23 +1,3 @@
-// Mode sombre
-const modeSwitch = document.querySelector('.mode-switch');
-if (modeSwitch) {
-    modeSwitch.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
-}
-
-// Filtrage des projets
-function filterProjects(tech) {
-    const projects = document.querySelectorAll('.project-card');
-    projects.forEach(project => {
-        if (tech === 'all' || project.dataset.tech.includes(tech)) {
-            project.style.display = 'block';
-        } else {
-            project.style.display = 'none';
-        }
-    });
-}
-
 // Animation au scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
@@ -29,16 +9,8 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Carrousel de projets (optionnel)
-let index = 0;
-const slides = document.querySelectorAll('.project-card');
-const carouselInner = document.querySelector('.carousel-inner');
-
-if (carouselInner && slides.length > 0) {
-    function nextSlide() {
-        index = (index + 1) % slides.length;
-        carouselInner.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    setInterval(nextSlide, 3000); // Change de slide toutes les 3 secondes
-}
+// Afficher la section d'accueil dès le chargement
+document.addEventListener('DOMContentLoaded', () => {
+    const homeSection = document.querySelector('#home');
+    homeSection.classList.add('visible');
+});
