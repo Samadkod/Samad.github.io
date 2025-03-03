@@ -274,9 +274,25 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Navigation */
+    header {
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Accueil */
     .home {
         flex-direction: column;
         text-align: center;
+        padding: 50px 20px;
     }
 
     .home-photo img {
@@ -284,11 +300,24 @@ footer {
         margin-top: 20px;
     }
 
+    /* Compétences */
     .skills-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Projets */
     .project-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Expérience */
+    .experience-item {
+        padding: 15px;
+    }
+
+    /* Contact */
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
